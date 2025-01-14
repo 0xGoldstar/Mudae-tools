@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Viewer</h1>
+  <p>To get started, send $imi-s in Discord</p>
+  <textarea id="input-area" placeholder="Paste your input here..."></textarea>
+  <button onclick="processInput()">Load Viewer</button>
 
+  <div class="slider-container">
+    <label for="card-size">Card Size: </label>
+    <input type="range" id="card-size" class="slider" min="50" max="300" value="120">
+    <span id="card-size-value">120px</span>
+  </div>
+
+  <textarea id="copy-textarea" class="copy-textarea" readonly></textarea>
+
+  <div class="character-name" id="character-name">Character: </div>
+
+  <div class="output" id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
