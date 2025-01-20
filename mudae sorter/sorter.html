@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mudae waste of time</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sorter.css">
+    <link rel="icon" href="https://mudae.goldstar.moe/mudae.png" type="image/png">
 </head>
 <body>
     <h1>Mudae waste of time</h1>
-    <p>To get started, send $mmi-s in Discord</p> <!-- New text under the header -->
+    <p>To get started, send $mmi-s in Discord</p>
     <div id="counter">Get some wives: 0</div>
     <textarea id="input-area" rows="5" placeholder="Enter name - link here..."></textarea>
     <button onclick="generateCards()">Load List</button>
@@ -18,17 +19,14 @@
     </div>
     <div id="cards"></div>
     
-    <div id="sorted-list">
-        <h3>thanks for nothing:</h3>
+
+    <div id="dynamic-fields-container">
         <pre id="list-output"></pre>
-        <button onclick="copyList('main')">Copy List</button>
+
+        <h3>thanks for nothing:</h3>
     </div>
-    
-    <div id="extra-list" style="display:none;">
-        <textarea id="extra-list-output" rows="10" cols="50" readonly></textarea>
-        <button id="copy-extra-list" onclick="copyList('extra')">Copy Extra List</button>
-    </div>
-    
-    <script src="script.js"></script>
+
+
+    <script src="sorter.js"></script>
 </body>
 </html>
